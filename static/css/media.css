@@ -1,0 +1,921 @@
+@media screen and (max-width: 1200px) {
+    #view .body.mz{
+        z-index: 111;
+    }
+    html body #view.view-design .body .head.block .head-nav .mobile-block *{
+        fill: #000000;
+    }
+    html body #view.view-design.view-manager .body .head.block .head-nav .mobile-block *{
+        fill: #ffffff;
+    }
+    .about_us_box {
+        padding: 83px 60px 28px 60px;
+    }
+    .program_box {
+        padding: 76px 60px 110px 60px;
+    }
+    .professions_box{
+        padding: 166px 0 170px 0;
+    }
+    .professions_box .body{
+        padding: 0 60px;
+    }
+    .professions_box .descr {
+        width: 65%;
+    }
+    .professions_statistic_design, .professions_statistic_vacancy {
+        right: 30px;
+    }
+    .employment .body{
+        padding: 0 20px 0 20px;
+    }
+    .employment .dr, .payment .dr {
+        width: 60%;
+    }
+    .inner {
+        width: 940px;
+        box-sizing: border-box;
+        padding: 0 60px;
+    }
+    .shedule_box {
+        padding: 125px 0 20px 0;
+    }
+    .shedule_includes {
+        float: none;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 75px auto;
+    }
+    .subscribe_box {
+        float: none;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 95px auto;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .subscribe_box .in {
+        width: 100%;
+    }
+
+    .shedule_prices .body {
+        padding: 0;
+    }
+    .shedule_prices .col {
+        padding: 20px 50px 65px 60px;
+    }
+    .dotted_list li {
+        padding: 10px 0 10px 20px;
+    }
+    .shedule_prices .full_course .price {
+        font-size: 67px;
+        padding-top: 5px;
+    }
+    .btn_big, .btn_small {
+        padding: 18px 20px;
+    }
+    .btn_big_2 {
+        padding: 17px 10px;
+    }
+    .payment .body {
+        padding: 0;
+        width: 1005px!important;
+    }
+    .pay-box .lft {
+        width: 35%;
+        padding: 30px 20px 0 0;
+    }
+    .pay-box .rght {
+        width: 65%;
+    }
+    .protection_box .body {
+        box-sizing: border-box;
+        padding: 0 0 0 60px;
+        overflow: visible;
+    }
+    .protection_diplom {
+        position: absolute;
+        right: -150px;
+        top: 0;
+        margin-top: 0;
+        float: right;
+        width: 65%;
+        padding: 65px 105px 190px 125px;
+        border-top: 8px solid #ffe992;
+        border-right: none;
+        border-left: 8px solid #ffe992;
+    }
+    .faq_box .body {
+        padding: 0 60px;
+    }
+    .employment li{
+        padding: 0 60px 48px 115px;
+    }
+    .m-button.btn-bron{
+        right: 60px;
+    }
+
+    .logos_box .logos{
+        padding-right: 50px;
+    }
+
+    .price-rouble{
+        height: 55px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .promo {
+        display: none!important;
+    }
+    .mbl2{
+        display: block;
+    }
+    .dskt2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .shedule_prices{
+        padding: 58px 0 56px 0;
+    }
+
+    .about_us_box {
+        padding: 83px 75px 28px 75px;
+    }
+    .program_box {
+        padding: 0 75px 110px 75px;
+        border-top: none;
+    }
+    .professions_box .body{
+        padding: 0 75px;
+    }
+    .side-left, .side-right {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .side-right {
+        background: #fad64e;
+        position: relative;
+    }
+
+    .side-right:before {
+        content: '';
+        background: #fad64e;
+        position: absolute;
+        top: 0;
+        left: -1000em;
+        right: -1000em;
+        bottom: 0;
+        z-index: -1;
+    }
+    .about_us_box .blockquote {
+        float: none;
+        width: 110%;
+        padding: 92px 0 30px 0;
+        box-sizing: border-box;
+        margin-left: -20px;
+    }
+    .about_us_box .blockquote.white {
+        width: 100%;
+        margin: 0 auto;
+        padding: 72px 15px 30px 40px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    .empl{
+        box-sizing:border-box;
+        width: 50%;
+        float: left;
+        padding-right: 20px;
+    }
+    .empl .inf{
+        color: #343434;
+        display: block;
+        padding: 10px 0 0 0;
+    }
+    .side-right:before{
+        display: none;
+    }
+    .blockquote .item {
+        float: left;
+        width: 50%;
+        padding: 10px 20px 25px 0;
+        box-sizing: border-box;
+    }
+    .blockquote .item.rt{
+        padding-right: 0;
+    }
+    .blockquote .item .fig.frst{
+        padding-top: 35px;
+    }
+    .program_list li {
+        float: none;
+        width: 100%;
+        padding: 0 0 40px 110px;
+    }
+    .professions_box {
+        padding: 70px 0 130px 0;
+    }
+    .professions_box .body{
+        padding: 0 0;
+    }
+    .professions_box .descr {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px 0 0;
+    }
+    .professions_statistic_design, .professions_statistic_vacancy {
+        display: none;
+    }
+    #view .professions_box .drag-and-drop {
+        margin-top: 65px;
+    }
+    .employment .body {
+        padding: 0 20px;
+    }
+    .employment li {
+        float: none;
+        width: 100%;
+        padding: 0 10px 50px 115px;
+    }
+    .employment .dr, .payment .dr {
+        width: 70%;
+    }
+    .shedule_prices .col {
+        padding: 20px 55px 65px 55px;
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .protection_box .body {
+        box-sizing: border-box;
+        padding: 0;
+        overflow: visible;
+    }
+    .protection_box .context {
+        width: 100%;
+        float: none;
+        padding: 0 10px 20px 0;
+    }
+    .protection_diplom {
+        position: relative;
+        right: auto;
+        top: 0;
+        margin-top: 10px;
+        float: none;
+        width: 100%;
+        padding: 45px 105px 40px 100px;
+        border-top: 8px solid #ffe992;
+        border-right: 8px solid #ffe992;
+        border-left: 8px solid #ffe992;
+    }
+    .faq_list {
+        margin: -10px 0 0 0;
+    }
+    .faq_box .body {
+        padding: 0;
+    }
+    .pay-box{
+        width: 100%;
+        height: auto;
+        max-width: 303px;
+        margin: 0 auto 30px auto;
+        position: relative;
+        padding: 20px 0 29px 0;
+    }
+    .pay-box .inner{
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .pay-box .left{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 29px;
+        background: url("../imgs/box-top.png") no-repeat 0 0;
+    }
+    .pay-box .right{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 29px;
+        background: url("../imgs/box-bottom.png") no-repeat 0 0;
+    }
+    .pay-box .rght{
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 0 0 0;
+        margin-top: 4px;
+    }
+    .pay-box .lft{
+        float: none;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0;
+        margin-top: 0;
+        border-right: none;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .pay-box ul.smenu-data {
+        margin: 0 auto;
+    }
+    .pay-box .label{
+        padding: 6px 0 2px 0;
+    }
+    .pay-box .inp{
+        position: relative;
+        padding: 0 0 11px 0;
+    }
+    .pmnt {
+        padding: 11px 0 3px 0;
+        margin-top: 9px;
+    }
+    .pmnt h4, .pmnt2 h4 {
+        font-size: 14px;
+        padding: 0 0 2px 0;
+    }
+    .pmnt2{
+        padding: 11px 0 3px 0;
+    }
+    .pay-box .hint{
+        font-size: 14px;
+        background-position: 0 8px!important;
+    }
+    .pay-box .inp.inp-mini{
+        width: 100%;
+        float: none;
+    }
+    .pay-box .inp.inp-mini.r{
+        float: none;
+    }
+    .pay-box .hint {
+        padding: 20px 0 20px 40px;
+        margin-bottom: 5px;
+    }
+    .pay-box .hint2 {
+        font-size: 10px;
+        color: #343434;
+        padding: 13px 0 15px 0;
+        text-align: center;
+    }
+    input[type="button"]{
+        padding: 18px 10px;
+        letter-spacing: 0.05em;
+    }
+    .payment .body {
+        padding: 0 8px 20px 8px;
+        width: auto!important;
+        box-sizing: border-box;
+    }
+    .mbl{
+        display: block;
+    }
+    .dskt{
+        display: none;
+    }
+    .m-button.btn-bron{
+        padding: 10px 0;
+        background: none!important;
+        right: 0;
+    }
+    .payment-steps li{
+        padding: 15px 35px 10px 45px;
+    }
+    .pay-box .label{
+        font-size: 22px;
+        text-align: left;
+    }
+    input[type="button"],
+    .pay-box input[type="submit"]{
+        padding: 14px 15px 12px 15px;
+        white-space: normal;
+        width: 100%;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+    }
+
+    .logos_box {
+        padding: 50px 75px 50px 75px;
+    }
+    .logos_box .logos{
+        padding-right: 0;
+    }
+    .logos_box .lg{
+        width: 50%;
+        float: left;
+    }
+    .logos_box .lg img{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 760px) {
+    .payment-steps{
+        margin: 20px auto 20px auto;
+        max-width: 230px;
+    }
+    .payment-steps li{
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 15px 0 10px 45px;
+    }
+    .payment-steps li:first-child{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #view .professions_box .drag-and-drop, #view .works_box .drag-and-drop {
+        display: none;
+    }
+    html body #view .body .head.block .head-body, html body footer .body .head.block .head-body{
+        padding-left: 20px;
+    }
+    .subscribe_box .form {
+        padding: 15px 10px;
+    }
+    .subscribe_box .prices .price{
+        background: url("../imgs/svg/free.svg") no-repeat 0 50%;
+        width: 160px;
+        background-size: 160px auto;
+    }
+    /*
+        #view .body .head.block .head-nav .left-block .logo{
+            margin-top: 25px;
+        }
+        html body #view .body .head.block .head-nav .mobile-block, html body footer .body .head.block .head-nav .mobile-block{
+            margin-top: 25px;
+        }
+    */
+    .program_description{
+        line-height: 1.4;
+        padding: 0;
+    }
+    .program_description p{
+        padding-bottom: 25px;
+    }
+    .program_box .descr{
+        padding-top: 10px;
+    }
+    .program_description strong{
+        display: block;
+    }
+    .inner {
+        padding: 0 10px;
+        width: auto;
+    }
+    .inner .h3{
+        text-align: center;
+    }
+    .inner .h3:after{
+        left: 50%;
+        margin-left: -40px;
+    }
+    .shedule_includes_list .in:before{
+        display: none;
+    }
+    .shedule_includes_list .in{
+        padding: 20px 5px 20px 20px;
+    }
+    .shedule_includes_list .hours .theory{
+        margin-right: 10px;
+    }
+    .shedule_includes_list .sub{
+        padding: 0 0 30px 20px;
+    }
+    .shedule_includes_list .sub .item{
+        padding: 0 0 0 25px;
+    }
+
+    .shedule_includes_list:before {
+        left: 24px;
+    }
+    .shedule_prices{
+        padding: 58px 0 0 0;
+    }
+    .protection_box .h3{
+        font-size: 38px;
+        text-align: center;
+    }
+    .protection_box .h3:after{
+        left: 50%;
+        margin-left: -40px;
+    }
+    .protection_box .context{
+        padding: 0 10px 20px 0;
+    }
+    .faq_list{
+        margin: 0;
+    }
+    .m-button{
+        margin-left: 17px;
+    }
+}
+@media screen and (max-width: 570px) {
+    html body #view .body .head.block .head-body, html body footer .body .head.block .head-body{
+        padding-left: 0px;
+    }
+    #view .body .head.block .head-body .title{
+        margin-top: 10px;
+    }
+    html body #view.view-design .body .head.block .head-body p.subtitle
+    {
+        text-align: center;
+        margin: 20px auto 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #view .body .head.block .head-body .more-button{
+        margin-top: 25px;
+        width: 85%;
+    }
+    .about_us_box {
+        padding: 63px 20px 0 20px;
+    }
+    .program_box {
+        padding: 0 20px 50px 20px;
+        border-top: none;
+    }
+    .professions_box .body{
+        padding: 0 20px;
+    }
+    .h3 {
+        font-size: 26px;
+        margin: 0 0 43px 0;
+        padding: 0 0 20px 0;
+    }
+    .h3:after{
+        bottom: -12px;
+    }
+    .side-right:before {
+        display: none;
+    }
+    .about_us_box .blockquote {
+        float: none;
+        width: 100%;
+        padding: 42px 20px 30px 20px;
+        margin-left: 0px;
+    }
+    .blockquote .item {
+        float: left;
+        width: 100%;
+        padding: 10px 19px 25px 19px;
+        box-sizing: border-box;
+    }
+    .blockquote .item.rt{
+        padding-right: 0;
+    }
+    .blockquote .item .fig.frst{
+        padding-top: 40px;
+    }
+    .program_list li {
+        float: none;
+        width: 100%;
+        padding: 0 20px 45px 20px;
+        text-align: center;
+    }
+    .program_list li > img {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+    .program_box .btn_big{
+        display: block;
+        float: none;
+    }
+    .professions_box .h3{
+        font-size: 38px;
+    }
+    .professions_description{
+        padding: 10px 0 10px 0;
+    }
+    .professions_description p{
+        padding-bottom: 20px;
+    }
+    .professions_description strong{
+        display: block;
+    }
+    .employment, .payment {
+        padding: 50px 0 30px 0;
+    }
+    .employment .body {
+        padding: 0 20px;
+    }
+    .employment h2, .payment h2 {
+        font-size: 26px;
+    }
+    .employment li {
+        float: none;
+        width: 100%;
+        padding: 0 20px 45px 20px;
+        text-align: center;
+    }
+    .employment li > img {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+    .authors h2 {
+        font-size: 26px;
+    }
+    .works_box {
+        padding: 65px 0 0 0;
+    }
+    .shedule_includes {
+        margin: 0 auto 75px auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .subscribe_box {
+        margin: 0 auto 25px auto;
+        padding: 0 10px 15px 10px;
+    }
+    .shedule_prices .col {
+        padding: 20px 20px 30px 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .protection_diplom {
+        display: none;
+    }
+    .protection_box {
+        padding: 50px 20px 30px 20px;
+    }
+    .faq_box {
+        padding: 50px 20px 60px 20px;
+    }
+    .payment .body {
+        padding: 0 8px 20px 8px;
+        width: auto!important;
+        box-sizing: border-box;
+    }
+    .employment .dr, .payment .dr {
+        width: 95%;
+    }
+    .payment .dr {
+        padding: 20px 10px 5px 10px;
+    }
+    .pay-box {
+        margin: 0 auto 20px auto;
+    }
+    .pay-box .lft{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .payment ul.smenu{
+        margin: 5px 0 10px 0;
+    }
+    .pay-box .inner{
+        padding: 0 20px;
+    }
+    .pay-box .hint{
+        display: none;
+    }
+    .authors {
+        padding: 50px 0 0 0;
+    }
+    .shedule_includes_list .faces{
+        display: none;
+    }
+    .shedule_box {
+        padding: 70px 0 20px 0;
+    }
+    .shedule_box .h3{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .form_tabs .link{
+        font-size: 11px;
+        letter-spacing: 0.05em;
+    }
+    .subscribe_box .addr {
+        display: block;
+        width: 100%;
+        padding: 13px 0 10px 55px;
+        background: url("../imgs/ico-addr.svg") no-repeat 0 15px;
+        background-size: 35px 44px;
+        box-sizing: border-box;
+    }
+    .success-message{
+        font-size: 16px;
+    }
+    .success-message h3{
+        font-size: 26px;
+        font-weight: 600;
+        padding: 13px 0 3px 0;
+        margin: 0;
+    }
+    .subscribe_box .success-message .addr{
+        background: none;
+        padding: 0 10px 30px 10px;
+    }
+    .subscribe_box .success-message .addr a{
+        font-size: 16px;
+    }
+    .success-message .socials{
+        padding-top: 0;
+    }
+    .success-message .socials h4{
+        padding: 0 0 23px 0;
+    }
+    .success-message .datetime{
+        padding: 10px 0 0 0;
+    }
+    .success-message .socials a.btn-vk{
+        background: #fbd73e url("../imgs/svg/social_vk.svg") no-repeat 23px 50%;
+        background-size: 21px 12px;
+        padding-left: 55px;
+    }
+    .success-message .socials a.btn-fb{
+        background: #fbd73e url("../imgs/svg/social_fb.svg") no-repeat 25px 50%;
+        background-size: 10px 20px;
+        padding-left: 40px;
+    }
+    #form-trial2 .success-message h3{
+        line-height: 1.3;
+        padding: 44px 0 23px 0;
+    }
+    #form-trial2 .success-message .socials h4{
+        padding: 20px 0 31px 0;
+    }
+
+    .metro {
+        padding: 5px 0 10px 55px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .shedule_includes_dates{
+        background: url("../imgs/svg/clocks-date-01.svg") 0 12px no-repeat;
+        background-size: 26px 27px;
+    }
+    .subscribe_box .hint {
+        padding: 0 10px 25px 10px;
+    }
+    .shedule_prices .full_course .price {
+        float: left;
+        box-sizing: border-box;
+        /*		width: 100%; */
+        padding-top: 0;
+        padding-bottom: 12px;
+        margin-top: -7px;
+    }
+    .shedule_prices .btn_big_2{
+        padding-right: 3px;
+        padding-left: 3px;
+        letter-spacing: 0.05em;
+    }
+    .hours_box {
+        padding-bottom: 9px;
+    }
+    .shedule_prices .full_course:before, .shedule_prices .full_course:after{
+        content: "";
+        display: none;
+    }
+    .shedule_prices .full_course .price.price-rouble:after{
+        bottom: auto;
+        top: -7px;
+    }
+    .hours_box .hours{
+        display: inline-block;
+    }
+    #view .body .head.block {
+        height: 594px;
+    }
+    #view .body .head.block .head-nav {
+        height: 90px;
+    }
+    #view .body .head.block .head-body .breadcrumbs{
+        padding: 36px 0 0 0;
+    }
+    #view.view-black .body .head.block .head-body .breadcrumbs span {
+        font-size: 16px;
+    }
+    .subscribe_box .prices{
+        margin: 14px 10px 10px 0;
+    }
+    .subscribe_box .prices .price {
+        background: url("../imgs/svg/free.svg") no-repeat 0 50%;
+        width: 140px;
+        background-size: 140px auto;
+    }
+    .subscribe_box .prices .sale_box .text{
+        font-size: 13px;
+    }
+    .delm{
+        display: block;
+        clear: both;
+        overflow: hidden;
+    }
+
+    .m-button{
+        display: block;
+        float: left;
+        margin: 35px 0 0 30px;
+    }
+    .m-button.btn-bron{
+        position: relative;
+        display: block;
+        float: right;
+        bottom: auto;
+        padding: 0;
+        margin: 35px 30px 0 0;
+    }
+    .subscribe_box .btns{
+        padding: 0 0 10px 0px;
+    }
+    .work_carousel .title {
+        padding: 10px 0 5px;
+    }
+    .work_carousel .face{
+        padding-left: 3px;
+    }
+    .work_carousel .face .img {
+        height: 70px;
+    }
+    .work_carousel .fig{
+        height: 440px;
+    }
+    .work_carousel .fig .img {
+        height: 450px;
+    }
+    .work_carousel .fig .img2 {
+        top: -25px;
+        right: 1px;
+        width: 159px;
+    }
+    .shedule_prices .h4{
+        font-size: 24px;
+    }
+
+
+    .about_us_box .blockquote.white {
+        padding: 72px 15px 30px 25px;
+    }
+    .empl{
+        width: 100%;
+        float: none;
+        padding-right: none;
+    }
+    .empl .inf{
+        display: inline-block;
+        padding: 0 0 0 10px;
+    }
+
+    .logos_box .h3 {
+        font-size: 26px;
+        margin: 0 0 23px 0;
+        padding: 0 0 20px 0px;
+        text-align: center;
+    }
+    .logos_box .h3:after {
+        display: none;
+    }
+
+    .logos_box {
+        padding: 30px 20px 50px 20px;
+        border-top: none;
+    }
+    .logos_box .lg img{
+        width: 120px;
+        height: 66px;
+    }
+    .price-rouble{
+        height: 64px;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    .subscribe_box .prices {
+        margin: 14px 0 10px 0;
+    }
+    .subscribe_box .sale_box{
+        width: 93px;
+        margin: 38px 0 0 0;
+    }
+    .dt{
+        padding: 6px 7px 2px 42px;
+    }
+    .work_carousel .fig .img2 {
+        right: 0;
+    }
+}

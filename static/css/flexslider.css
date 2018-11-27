@@ -1,0 +1,362 @@
+/*
+ * jQuery FlexSlider v2.6.1
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover {
+    outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+#reviews-list .flexslider {
+}
+#reviews-list .flexslider .slides > li {
+    position: relative;
+    height: 600px;
+}
+
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+    /*  width: 100%; */
+    display: block;
+}
+.flexslider .slides:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+html[xmlns] .flexslider .slides {
+    display: block;
+}
+* html .flexslider .slides {
+    height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+    display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+    margin: 0;
+    position: relative;
+    zoom: 1;
+}
+.flexslider.faces_carousel .fig{
+    float: left;
+    width: 35%;
+    padding: 0;
+    margin: 0;
+}
+.flexslider.faces_carousel .fig img{
+    max-width: 100%;
+    display: block;
+}
+.flexslider.faces_carousel .context{
+    float: left;
+    width: 65%;
+    box-sizing: border-box;
+    padding: 0 100px 0 10px;
+}
+.flexslider .slides {
+    zoom: 1;
+}
+.flexslider .slides img {
+    height: auto;
+    -moz-user-select: none;
+}
+.flex-viewport {
+    max-height: 2000px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.loading .flex-viewport {
+    max-height: 300px;
+}
+.carousel li {
+    margin-right: 5px;
+}
+.flex-direction-nav {
+    *height: 0;
+}
+.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 20px;
+    height: 30px;
+    margin: -25px 0 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+}
+.flex-direction-nav .flex-prev {
+    background: url("../imgs/svg/prev.svg") no-repeat 100% 50%;
+    background-size: 15px 25px;
+    left: 0px;
+}
+.flex-direction-nav .flex-next {
+    background: url("../imgs/svg/next.svg") no-repeat 100% 50%;
+    background-size: 15px 25px;
+    right: 0px;
+}
+#reviews-list .flex-direction-nav .flex-prev {
+    background: url("../imgs/corp/prev.png") no-repeat 100% 50%;
+    left: 15%;
+}
+#reviews-list .flex-direction-nav .flex-next {
+    background: url("../imgs/corp/next.png") no-repeat 100% 50%;
+    right: 15%;
+}
+.flex-direction-nav .flex-disabled {
+    opacity: 0!important;
+    filter: alpha(opacity=0);
+    cursor: default;
+    z-index: -1;
+}
+.flex-pauseplay a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0.8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+}
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+}
+.flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: default;
+}
+.flex-control-thumbs {
+    margin: 5px 0 0;
+    position: static;
+    overflow: hidden;
+}
+.flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+.flex-control-thumbs img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+    opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+
+/** **/
+
+.faces_carousel .name {
+    margin-bottom: 13px;
+    color: #343434;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+}
+.faces_carousel .position {
+    margin-bottom: 0px;
+    padding-bottom: 31px;
+    position: relative;
+    color: #808080;
+    font-size: 14px;
+    line-height: 1;
+}
+.faces_carousel .position a{
+    color: #808080;
+    font-size: 14px;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #cacaca;
+}
+.faces_carousel .position a:hover{
+    border-bottom: none;
+}
+.faces_carousel .position:before {
+    content: '';
+    background: #ffd800;
+    width: 161px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.faces_carousel .position .link {
+    color: #343434;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.faces_carousel .text {
+    margin-bottom: 42px;
+    color: #434343;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+}
+.faces_carousel .text span{
+    padding: 29px 0 0 0;
+    color: #808080;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+.faces_carousel .text span strong{
+    font-weight: 600;
+    color: #434343;
+}
+.faces_carousel .more {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 1200px) {
+    .flexslider.faces_carousel .context{
+        padding: 0 50px 0 10px;
+    }
+}
+@media screen and (max-width: 975px) {
+    .flex-direction-nav a {
+        margin: -25px 0 0 0;
+        top: 25%;
+    }
+    .flexslider.faces_carousel .fig{
+        float: none;
+        width: 320px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 55%;
+        background: #ebebeb;
+        overflow: hidden;
+    }
+    .flexslider.faces_carousel .fig img{
+        display: block;
+        margin: 0 auto;
+    }
+    .flexslider.faces_carousel .context{
+        float: none;
+        width: 100%;
+        padding: 34px 20px 50px 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .flexslider.faces_carousel .fig{
+        width: 80%;
+    }
+    .flexslider.faces_carousel .context{
+        padding: 34px 30px 50px 30px;
+    }
+    .faces_carousel .name {
+        font-size: 26px;
+    }
+    .faces_carousel .position {
+        font-size: 14px;
+    }
+}
