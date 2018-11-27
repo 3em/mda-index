@@ -11,7 +11,9 @@
     padding-right: 65px;
 }
 
-
+.index-page #view .body .head.block .head-nav .mobile-block{
+    display: none;
+}
 
 .u-clear-fix:after {
     content: ".";
@@ -262,6 +264,11 @@ body{
         background: #fff;
     }
 
+    .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav{
+        display: inline-block;
+        margin-left: 90px;
+    }
+
     .index-page #view .body.index-header,
     .index-page #view .body.about_us_box,
     .index-page #view .body.program_box,
@@ -307,6 +314,8 @@ body{
     .index-page .pay-box{
         float: none;
         margin: auto;
+        left: 50%;
+        transform: translate(-50%,0);
     }
 
     .index-page .promo{
@@ -396,9 +405,51 @@ body{
     .index-page .program_box{
         padding-top: 20px;
     }
+
+    .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav{
+        margin-left: 40px;
+    }
+
+    .index-page .pmnt{
+        margin-top: 0;
+    }
 }
 @media screen and (max-width: 768px) {
     .index-page .promo .text{
         font-size: 13px;
+    }
+
+    .index-page .about_us_box{
+        overflow: hidden;
+    }
+
+    .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav {
+        margin-left: 5%;
+        width: 34%;
+        float: right;
+        vertical-align: top;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .index-page .promo .btn_small{
+        min-width: 110px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav{
+        display: none;
+    }
+
+    .index-page #view .body .head.block .head-nav .mobile-block{
+        display: inline-block;
+    }
+
+    .index-page .i-video{
+        margin-left: -6%;
+        margin-right: -6%;
+        width: 112%;
     }
 }
