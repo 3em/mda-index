@@ -132,7 +132,7 @@ body{
 .index-page .pay-box .label{
     font-size: 22px;
     text-align: left;
-    padding: 6px 0 2px 0;
+    padding: 6px 0 0 0;
     margin-bottom: 0;
 }
 
@@ -226,7 +226,7 @@ body{
     padding: 0 0 11px 0;
 }
 .index-page .pmnt {
-    padding: 11px 0 3px 0;
+    padding: 0 0 3px 0;
     margin-top: 9px;
     border-top: none;
 }
@@ -314,8 +314,6 @@ body{
     .index-page .pay-box{
         float: none;
         margin: auto;
-        left: 50%;
-        transform: translate(-50%,0);
     }
 
     .index-page .promo{
@@ -439,6 +437,13 @@ body{
 
     .index-page #view .body .head.block .head-nav .mobile-block{
         display: inline-block;
+    }
+
+    .index-page .pay-box{
+        float: none;
+        margin: auto;
+        left: 50%;
+        transform: translate(-50%,0);
     }
 }
 
