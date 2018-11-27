@@ -432,19 +432,21 @@ body{
     }
 }
 
-@media screen and (max-width: 320px) {
-    .index-page .promo .btn_small{
-        min-width: 110px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
+@media screen and (max-width: 400px) {
     .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav{
         display: none;
     }
 
     .index-page #view .body .head.block .head-nav .mobile-block{
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .index-page .promo .btn_small{
+        min-width: 110px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .index-page .i-video{
