@@ -24,6 +24,10 @@
     height: 0;
 }
 
+.promo-scroll{
+    display: none;
+}
+
 body{
     background: #343434;
 }
@@ -98,6 +102,14 @@ body{
 
 .index-page .promo .btn_small{
     min-width: 182px;
+}
+
+.index-page .pmnt .price-rouble{
+    height: 60px;
+}
+
+.pay-box .price.price-rouble:after{
+    bottom: 2px;
 }
 
 
@@ -204,7 +216,7 @@ body{
     float: none;
     width: 100%;
     box-sizing: border-box;
-    padding: 18px 0 0 0;
+    padding: 16px 0 0 0;
     margin-top: 4px;
 }
 .index-page .pay-box .lft{
@@ -340,12 +352,8 @@ body{
     }
 
     .index-page .promo .text{
-        margin-right: 175px;
-        line-height: 21px;
         padding-left: 35px;
         position: relative;
-        text-align: left;
-        display: table;
     }
 
     .index-page .promo .text .in{
@@ -363,13 +371,7 @@ body{
         transform: translate(0, -50%);
     }
 
-    .index-page .promo .btn_small{
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translate(0, -50%);
-        min-width: 150px;
-    }
+
 
     .index-page .i-video, .index-page .i-video .yt, .index-page .i-video video, .index-page .i-video .yt iframe{
         height: auto;
@@ -414,7 +416,7 @@ body{
     }
     .index-page .pay-box .rght{
         margin-top: 0;
-        padding-top: 14px;
+        padding-top: 12px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -429,9 +431,37 @@ body{
     .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav {
         margin-left: 5%;
         width: 34%;
-        float: right;
         vertical-align: top;
         text-align: center;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .index-page .promo .text{
+        margin-right: 175px;
+        line-height: 21px;
+        position: relative;
+        text-align: left;
+        display: table;
+    }
+    .index-page .promo .btn_small{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        min-width: 150px;
+    }
+
+    .index-page #view .body .head.block .head-nav .left-block{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .index-page #view .body .head.block .head-nav .left-block{
+        width: 100%;
+    }
+    .index-page #view .body .head.block .head-nav .head.left-block nav.main-nav{
+        float: right;
     }
 }
 
@@ -443,7 +473,9 @@ body{
     .index-page #view .body .head.block .head-nav .mobile-block{
         display: inline-block;
     }
+}
 
+@media screen and (max-width: 330px) {
     .index-page .pay-box{
         float: none;
         margin: auto;
@@ -460,8 +492,73 @@ body{
     }
 
     .index-page .i-video{
-        margin-left: -6%;
-        margin-right: -6%;
-        width: 112%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .index-header{
+        display: none;
+    }
+
+    .index-page #view .body.about_us_box{
+        padding-top: 56.25%;
+    }
+
+    .index-page .about_us_box .side-left{
+        padding-top: 20px;
+    }
+
+    .index-page .about_us_box .side-left h3{
+        text-align: center;
+    }
+
+    .index-page .about_us_box .side-left h3 img{
+        display: none;
+    }
+
+    .index-page .promo.promo_inline{
+        text-align: center;
+    }
+
+    .index-page .promo.promo_inline .text{
+        padding-left: 0;
+        text-align: center;
+        margin: auto;
+        display: block;
+        font-size: 16px;
+    }
+
+    .index-page .promo.promo_inline .text .sale{
+        display: none;
+    }
+
+    .index-page .promo.promo_inline .btn_small{
+        position: relative;
+        right: auto;
+        left: auto;
+        transform: none;
+        display: inline-block;
+        min-width: 155px;
+        margin-top: 16px;
+    }
+
+    .promo-scroll{
+        display: block;
+        margin-top: 18px;
+    }
+
+    .promo-scroll a{
+        text-transform: uppercase;
+        color: #343434;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: .1em;
+        text-decoration: none;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #343434;
     }
 }

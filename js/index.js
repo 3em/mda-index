@@ -6,6 +6,7 @@ $(function () {
   var windowWidth = $(window).width();
   var $buttonSetPromo = $('.js-set-promo');
   var $promoInput = $('.js-promo-input');
+  var $scrollTo = $('.js-scroll-to');
 
   var PROMO_CODE = 'MDAdesignonline';
 
@@ -20,13 +21,27 @@ $(function () {
   }
   setHeightSideLeft();
 
-
+  /**
+   * set promo code to form
+   */
   $buttonSetPromo.on('click', function (e) {
     e.preventDefault();
 
     scrollTo($('#pay-box'), 0);
 
     $promoInput.val(PROMO_CODE).trigger('change');
+  });
+
+  /**
+   * scroll to block
+   */
+  $scrollTo.on('click', function (e) {
+    e.preventDefault();
+    var hrefId = $('#'+$(this).attr('href'));
+
+    if (hrefId)
+      scrollTo(hrefId, 0);
+
   });
 
 
