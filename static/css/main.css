@@ -1923,6 +1923,10 @@ body {
 .hide {
     opacity: 0
 }
+
+#view.hide{
+    opacity: 1;
+}
 .none {
     display: none !important
 }
