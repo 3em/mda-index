@@ -484,7 +484,7 @@ body{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .index-page .promo .btn_small{
         min-width: 110px;
         padding-left: 15px;
@@ -530,6 +530,7 @@ body{
         margin: auto;
         display: block;
         font-size: 16px;
+        width: 280px;
     }
 
     .index-page .promo.promo_inline .text .sale{
